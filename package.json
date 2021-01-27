@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
-    "build": "rimraf dist && babel src -d dist --source-maps && node dist/index.js",
+    "build": "rimraf dist && babel src -d dist --source-maps",
     "test": "set NODE_ENV=test&& mocha --config src/test/.mocharc.yml"
   },
   "author": "",
