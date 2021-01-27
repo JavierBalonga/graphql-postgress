@@ -1,0 +1,14 @@
+require: 
+  - "@babel/register"
+  - "src/test/setupTest.spec.js"
+spec:
+  - "src/test/**/*.spec.js"
+watch-files:
+  - "src/test/**/*.spec.js"
+full-trace: true
+exit: true
+color: true
+node:
+  - 14
+  - 13
+  - 12
