@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
 import db from "./db";
 import app from "./server";
-const { PORT = 3001, DB_FORCE_SYNC } = dotenv.config().parsed;
+dotenv.config();
+const { PORT = 3001, DB_FORCE_SYNC } = process.env;
 
 db.sequelize
   .sync({ force: DB_FORCE_SYNC === "true" })
