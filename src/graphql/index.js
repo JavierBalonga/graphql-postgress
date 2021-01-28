@@ -16,4 +16,8 @@ export default new ApolloServer({
   context,
   plugins,
   dataSources: () => ({ db }),
+  /* the following lines enable the playground in production */
+  /* in a real project it should not be done */
+  introspection: true,
+  playground: true,
 });
